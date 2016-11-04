@@ -135,10 +135,10 @@ body {
 .radio input[type=radio]:focus + label::before {
     outline: #fff;
 }
-.radio+.radio {
-  @media only screen and (min-width: 768px) {
-    // margin-top: 10px;
-  }  
+.form-units {
+  .col-sm-2 {
+    font-weight: 700;
+  }
 }
 .radio label {
   padding-left: 10px;
