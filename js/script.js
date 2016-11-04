@@ -37,18 +37,17 @@ var carousel01Opt = {
 
 carousel01.owlCarousel(carousel01Opt);
 
-carousel01.on('changed.owl.carousel', function(event) {
-
-    if( event.item.index == 0) {
-      $('.owl-prev').addClass('hidden');
-    } 
-    else if( event.item.index == event.item.count - 1) {
-      $('.owl-next').addClass('hidden');
-    }
-    else {
-       $('.owl-prev').removeClass('hidden');
-       $('.owl-next').removeClass('hidden'); 
-    }
+carousel01.on('initialized.owl.carousel changed.owl.carousel', function(event) {
+  if( event.item.index == 0) {
+    $('.owl-prev').addClass('hidden');
+  } 
+  else if( event.item.index == event.item.count - 1) {
+    $('.owl-next').addClass('hidden');
+  }
+  else {
+     $('.owl-prev').removeClass('hidden');
+     $('.owl-next').removeClass('hidden'); 
+  }
  });
 
 
