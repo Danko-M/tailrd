@@ -12,6 +12,9 @@ var carousel01Opt = {
   responsiveClass: true,
   touchDrag: false,
   responsive: {
+    1200: {
+      items: 4
+    },
     0: {
       items: 1
     },
@@ -20,14 +23,34 @@ var carousel01Opt = {
     },
     992: {
       items: 3
-    },
-    1200: {
-      items: 4
     }
-  }
+  },
+  // onInitialized: function (event) {
+  //   console.log('123');
+  // },
+  onChanged: function (event) {
+    console.log(this._current);
+  } 
 }
 
+
+
 carousel01.owlCarousel(carousel01Opt);
+
+carousel01.on('changed.owl.carousel', function(event) {
+
+    if( event.item.index == 0) {
+      $('.owl-prev').addClass('hidden');
+    } 
+    else if( event.item.index == event.item.count - 1) {
+      $('.owl-next').addClass('hidden');
+    }
+    else {
+       $('.owl-prev').removeClass('hidden');
+       $('.owl-next').removeClass('hidden'); 
+    }
+ });
+
 
 // Toggle carousel items (survey page)
 
@@ -40,6 +63,7 @@ function toggRemoveClasses(){
 	carouselTogglesContainerItems.removeClass('opacity-33');
 	carouselTogglesContainerItemsCheckIcon.addClass('hidden');
 }		
+
 
 carouselTogglesContainer.find(carouselTogglesContainerItems).on('click', function() {	
 	var $this = $(this);
