@@ -35,8 +35,7 @@ carousel01.owlCarousel(carousel01Opt);
 
 var carouselTogglesContainer = $('.owl-carousel'),
 		carouselTogglesContainerItems = carouselTogglesContainer.find('span'),
-		carouselTogglesContainerItemsCheckIcon = carouselTogglesContainerItems.find('.fa-check'),
-		carouselTogglesContainerItemsExpand = carouselTogglesContainer.find('.fa-expand');
+		carouselTogglesContainerItemsCheckIcon = carouselTogglesContainerItems.find('.fa-check');
 
 function toggRemoveClasses(){
 	carouselTogglesContainerItems.removeClass('opacity-33');
@@ -58,24 +57,15 @@ carouselTogglesContainer.find(carouselTogglesContainerItems).on('click', functio
 
 });
 
-carouselTogglesContainerItemsExpand.on('click', function(e) {
-	e.stopPropagation();
-});
-
 // Toggle items (survey page)
 
 var togglesContainer = $('.container-narrow-p-x-30'),
 		togglesContainerItems = togglesContainer.find('span'),
-		togglesContainerItemsCheckIcon = togglesContainerItems.find('.fa-check'),
-		togglesContainerItemsExpand = togglesContainer.find('.fa-expand');
+		togglesContainerItemsCheckIcon = togglesContainerItems.find('.fa-check');
 
 togglesContainer.find(togglesContainerItems).on('click', function() {	
 	var $this = $(this);
 	
 	$this.toggleClass('opacity-33');
 	$this.find(togglesContainerItemsCheckIcon).toggleClass('hidden');
-});
-
-togglesContainerItemsExpand.on('click', function(e) {
-	e.stopPropagation();
 });

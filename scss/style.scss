@@ -219,23 +219,7 @@ body {
 .owl-dots {
   display: none;
 }
-a.fa-expand {
-  position: absolute;  
-  padding: 10px;
-  font-size: 14px;
-  color: rebeccapurple;
-  text-decoration: none;
-  transition: all .15s;
-  &:hover {
-    font-size: 20px;
-  }
-}
-.owl-item {
-  .fa-expand {
-    bottom: 10px;
-    margin-left: -120px;
-  }
-}
+
 .container-narrow-p-x-30 {
   margin-top: 35px;
   @media only screen and (min-width: 1200px) {
@@ -246,11 +230,6 @@ a.fa-expand {
   .col-sm-6 {
     position: relative;
     margin-bottom: 20px;
-  }
-  .fa-expand {
-    bottom: 5px;
-    display: block;
-    margin-left: 5px;    
   }
   .fa-check {
     position: absolute;
