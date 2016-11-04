@@ -18,7 +18,7 @@ span, a, strong {
 }
 .surveyPage {
   font-size: 20px;
-  color: $txt-col-01;
+  color: $black;
   .container {
     padding-top: 60px;
     padding-bottom: 50px;
@@ -27,17 +27,18 @@ span, a, strong {
     margin-bottom: 25px;
   }
   strong {
-    font-weight: 900;
+    font-weight: 700;
   }
   .btn {
     min-width: 155px;
     margin-top: 50px;
     font-size: 18px;
     color: $white;
-    background-color: $blue;
+    background-color: darken($blue , 10);
     border-radius: 0;
     border: 0;
-    &:hover {
+    &:focus {
+      color: $white;
       background-color: darken($blue , 10);
     }
   }
@@ -71,7 +72,8 @@ span, a, strong {
   padding-left: 0;
 }
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   // background: red;
 }
 
@@ -113,8 +115,6 @@ body {
 
 .checkbox label {
   padding-left: 10px;
-  color: $txt-col-03;
-  font-weight: 700;
   &:before {
     top: 6px;
   }
@@ -137,13 +137,11 @@ body {
 }
 .form-units {
   .col-sm-2 {
-    font-weight: 700;
+    font-weight: 400;
   }
 }
 .radio label {
   padding-left: 10px;
-  color: $txt-col-03;
-  font-weight: 700;
   &:before {
     top: 6px;
   }
