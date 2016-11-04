@@ -24,32 +24,12 @@ var carousel01Opt = {
     992: {
       items: 3
     }
-  },
-  // onInitialized: function (event) {
-  //   console.log('123');
-  // },
-  onChanged: function (event) {
-    console.log(this._current);
-  } 
+  }
 }
 
-
+//   changed.owl.carousel
 
 carousel01.owlCarousel(carousel01Opt);
-
-carousel01.on('initialized.owl.carousel changed.owl.carousel', function(event) {
-  if( event.item.index == 0) {
-    $('.owl-prev').addClass('hidden');
-  } 
-  else if( event.item.index == event.item.count - 1) {
-    $('.owl-next').addClass('hidden');
-  }
-  else {
-     $('.owl-prev').removeClass('hidden');
-     $('.owl-next').removeClass('hidden'); 
-  }
- });
-
 
 // Toggle carousel items (survey page)
 

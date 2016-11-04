@@ -205,11 +205,17 @@ body {
   @media only screen and (min-width: 1200px) {
     left: -50px;    
   }
+  &.disabled {
+    display: none;
+  }
 }
 .owl-next {
   right: -0px;
   @media only screen and (min-width: 1200px) {
     right: -50px;     
+  }
+  &.disabled {
+    display: none;
   }
 }
 .owl-dots {
