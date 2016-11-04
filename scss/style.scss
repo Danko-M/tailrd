@@ -201,7 +201,7 @@ body {
   } 
 }
 .owl-prev {
-  left: -0px;
+  left: -10px;
   @media only screen and (min-width: 1200px) {
     left: -50px;    
   }
@@ -210,7 +210,7 @@ body {
   }
 }
 .owl-next {
-  right: -0px;
+  right: -10px;
   @media only screen and (min-width: 1200px) {
     right: -50px;     
   }
