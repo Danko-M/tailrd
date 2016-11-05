@@ -2,6 +2,21 @@ $(function() {
   //jQuery code here 
 });
 
+// radio buttons (survey page - How tall are you?)
+
+var radioFeetInch = $('#radio3'),
+    radioCm       = $('#radio4');
+
+radioFeetInch.on('click', function() {
+  $('.input-cm').slideUp(200);
+  $('.input-feet-inch').slideDown(200);
+});
+
+radioCm.on('click', function() {
+  $('.input-cm').slideDown(200);
+  $('.input-feet-inch').slideUp(200);
+});
+
 // carousel (survey page)
 var carousel01 = $('.owl-carousel');
 var carousel01Opt = {

@@ -149,7 +149,17 @@ body {
     top: 9px;
     background-color: #5bc1af; 
   }   
+}  
+.input-cm {
+  display: none;
 }
+.input-feet-inch {
+  // display: none;
+  .form-control {
+    display: inline-block;
+  }
+}
+
 .container-narrow {
   margin-top: 40px;
   @media only screen and (min-width: 1200px) {
