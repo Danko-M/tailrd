@@ -17,6 +17,9 @@ radioCm.on('click', function() {
   $('.input-feet-inch').slideUp(200);
 });
 
+// IE8 & IE9 input placehoder
+$('input[type="text"]').placeholder();
+
 // carousel (survey page)
 var carousel01 = $('.owl-carousel');
 var carousel01Opt = {
