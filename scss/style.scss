@@ -135,6 +135,14 @@ body {
 .radio input[type=radio]:focus + label::before {
     outline: #fff;
 }
+
+
+.how-tall {
+  min-height: 315px;
+  @media only screen and (min-width: 768px) {
+    min-height: 285px;
+  }
+}
 .form-units {
   .col-sm-2 {
     font-weight: 400;
@@ -154,7 +162,6 @@ body {
   display: none;
 }
 .input-feet-inch {
-  // display: none;
   .form-control {
     display: inline-block;
   }
