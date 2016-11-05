@@ -136,6 +136,14 @@ body {
     outline: #fff;
 }
 
+.ie8 {
+  .radio,
+  .checkbox {
+    input {
+      margin-top: 10px;      
+    }
+  } 
+}
 
 .how-tall {
   min-height: 315px;
