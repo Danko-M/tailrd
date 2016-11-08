@@ -26,11 +26,11 @@ gulp.task('serve', ['sass'], function() {
 // Compile sass into CSS
 gulp.task('sass', function() {
     return gulp.src(src.scss)
-      .pipe(sourcemaps.init())
-      .pipe(autoprefixer({
-        browsers: ['last 4 versions']
-      }))
+    	.pipe(sourcemaps.init())
       .pipe(sass({outputStyle: 'expanded'}))
+      .pipe(autoprefixer({
+          browsers: ['last 4 versions']
+      }))
       .pipe(sourcemaps.write())
       .pipe(gulp.dest('./css/'))
       .pipe(reload({stream: true}));
@@ -38,12 +38,12 @@ gulp.task('sass', function() {
 
 // Minify css for production
 gulp.task('prod', function() {
-    return gulp.src(src.scss)
-      .pipe(sass({outputStyle: 'compressed'}))
-      .pipe(autoprefixer({
+	return gulp.src(src.scss)
+		.pipe(sass({outputStyle: 'compressed'}))
+    .pipe(autoprefixer({
         browsers: ['last 4 versions']
     }))
-    .pipe(gulp.dest('./css/'));
+		.pipe(gulp.dest('./css/'));
 });
 
 gulp.task('default', ['serve']);

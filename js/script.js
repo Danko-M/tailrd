@@ -2,6 +2,24 @@ $(function() {
   //jQuery code here 
 });
 
+// radio buttons (survey page - What's your gender?)
+var man = $('#radio1'),
+    woman = $('#radio2'),
+    manShapesSlides= $('.man-checked'),
+    womanShapesSlides= $('.woman-checked');
+
+man.on('click', function() {
+  womanShapesSlides.hide();
+  manShapesSlides.show();
+});
+
+woman.on('click', function() {
+  manShapesSlides.hide();
+  womanShapesSlides.show();
+});
+
+
+
 // radio buttons (survey page - How tall are you?)
 
 var radioFeetInch = $('#radio3'),

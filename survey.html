@@ -1,5 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!--> 
 <html lang="en">
+  <!--<![endif]-->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,9 +24,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
-<!--[if IE 8]> <body class="surveyPage ie8"> <![endif]-->
-<!--[if !IE]><!--> 
-  <body class="surveyPage"><!--<![endif]-->  
+  <body class="surveyPage">  
 
     <div class="container-fluid header">
       <div class="container">
@@ -46,11 +47,11 @@
           <p><strong>What's your gender?</strong></p>
           <form role="form">
             <div class="radio col-sm-2 col-md-1">
-              <input type="radio" name="radio1" id="radio1" value="option1">
+              <input type="radio" name="radio1" id="radio1" value="man" checked>
               <label for="radio1">Man</label>
             </div>
             <div class="radio col-sm-1 m-t-md-10">
-              <input type="radio" name="radio1" id="radio2" value="option2">
+              <input type="radio" name="radio1" id="radio2" value="woman">
               <label for="radio2">Woman</label>
             </div>            
           </form>
@@ -105,44 +106,84 @@
         <div class="row">
           <p><strong>Select the image that most closely resembles your body's physique:</strong></p>
           <div class="container-narrow center-block">
-            <div class="owl-carousel text-center">
+          <!-- if man checked -->
+            <div class="owl-carousel text-center man-checked">
               <div class="item">
                 <span>
-                  <img src="img/temp-01.png">
+                  <img src="img/btMan1.png">
                   <i class="fa fa-check hidden" aria-hidden="true"></i>
                 </span>
               </div>
               <div class="item">
                 <span>
-                  <img src="img/temp-02.png">
+                  <img src="img/btMan2.png">
                   <i class="fa fa-check hidden" aria-hidden="true"></i>
                 </span>
               </div>
               <div class="item">
                 <span>
-                  <img src="img/temp-03.png">
+                  <img src="img/btMan3.png">
                   <i class="fa fa-check hidden" aria-hidden="true"></i>
                 </span>
               </div>
               <div class="item">
                 <span>
-                  <img src="img/temp-04.png">
+                  <img src="img/btMan4.png">
                   <i class="fa fa-check hidden" aria-hidden="true"></i>
                 </span>
               </div>
               <div class="item">
                 <span>
-                  <img src="img/temp-05.png">
+                  <img src="img/btMan5.png">
                   <i class="fa fa-check hidden" aria-hidden="true"></i>
                 </span>
               </div>
               <div class="item">
                 <span>
-                  <img src="img/temp-06.png">
+                  <img src="img/btMan6.png">
                   <i class="fa fa-check hidden" aria-hidden="true"></i>
                 </span>
               </div>
-            </div><!-- /.owl-carousel -->      
+            </div><!-- /.owl-carousel .man-checked -->   
+          <!-- if woman checked -->
+            <div class="owl-carousel text-center woman-checked">
+              <div class="item">
+                <span>
+                  <img src="img/btWoman1.png">
+                  <i class="fa fa-check hidden" aria-hidden="true"></i>
+                </span>
+              </div>
+              <div class="item">
+                <span>
+                  <img src="img/btWoman2.png">
+                  <i class="fa fa-check hidden" aria-hidden="true"></i>
+                </span>
+              </div>
+              <div class="item">
+                <span>
+                  <img src="img/btWoman3.png">
+                  <i class="fa fa-check hidden" aria-hidden="true"></i>
+                </span>
+              </div>
+              <div class="item">
+                <span>
+                  <img src="img/btWoman4.png">
+                  <i class="fa fa-check hidden" aria-hidden="true"></i>
+                </span>
+              </div>
+              <div class="item">
+                <span>
+                  <img src="img/btWoman5.png">
+                  <i class="fa fa-check hidden" aria-hidden="true"></i>
+                </span>
+              </div>
+              <div class="item">
+                <span>
+                  <img src="img/btWoman6.png">
+                  <i class="fa fa-check hidden" aria-hidden="true"></i>
+                </span>
+              </div>
+            </div><!-- /.owl-carousel .man-checked -->   
           </div><!-- /.container-narrow -->
         </div><!-- /.row -->
       </div><!-- /.container -->

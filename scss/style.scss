@@ -122,7 +122,6 @@ body {
     padding-top: 2px;
     font-size: 18px;
     color: #5bc1af;
-  // text-shadow: 2px 0 0 #fff, 0 -2px 0 #fff;
   } 
 }
 
@@ -144,7 +143,9 @@ body {
     }
   } 
 }
-
+.woman-checked {
+  display: none;
+}
 .how-tall {
   min-height: 315px;
   @media only screen and (min-width: 768px) {
