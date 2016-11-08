@@ -9,13 +9,13 @@ var man = $('#radio1'),
     womanShapesSlides= $('.woman-checked');
 
 man.on('click', function() {
-  womanShapesSlides.hide();
-  manShapesSlides.show();
+  womanShapesSlides.addClass('hidden');
+  manShapesSlides.removeClass('hidden');
 });
 
 woman.on('click', function() {
-  manShapesSlides.hide();
-  womanShapesSlides.show();
+  manShapesSlides.addClass('hidden');
+  womanShapesSlides.removeClass('hidden');
 });
 
 

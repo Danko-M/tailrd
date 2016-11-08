@@ -143,9 +143,7 @@ body {
     }
   } 
 }
-.woman-checked {
-  display: none;
-}
+
 .how-tall {
   min-height: 315px;
   @media only screen and (min-width: 768px) {
@@ -191,7 +189,8 @@ body {
 .owl-carousel {
   .owl-item {
     img {
-      max-width: 250px;
+      width: 250px;
+      height: 375px;
       margin: 0 auto;
     }  
   }
