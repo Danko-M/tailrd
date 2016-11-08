@@ -5,17 +5,19 @@ $(function() {
 // radio buttons (survey page - What's your gender?)
 var man = $('#radio1'),
     woman = $('#radio2'),
-    manShapesSlides= $('.man-checked'),
-    womanShapesSlides= $('.woman-checked');
+    manShapesSlides = $('.man-checked'),
+    womanShapesSlides = $('.woman-checked'),
+    manPersonality = $('.man-personality'),
+    womanPersonality = $('.woman-personality');
 
 man.on('click', function() {
-  womanShapesSlides.addClass('hidden');
-  manShapesSlides.removeClass('hidden');
+  womanShapesSlides.add(womanPersonality).addClass('hidden');
+  manShapesSlides.add(manPersonality).removeClass('hidden');
 });
 
 woman.on('click', function() {
-  manShapesSlides.addClass('hidden');
-  womanShapesSlides.removeClass('hidden');
+  manShapesSlides.add(manPersonality).addClass('hidden');
+  womanShapesSlides.add(womanPersonality).removeClass('hidden');
 });
 
 
