@@ -3,11 +3,35 @@
   background-image: url(../img/bg-home-hero.jpg);
   background-size: cover;
 }
+.hero-form {
+  display: inline-block;
+	max-width: 400px;
+	.input-group {
+		* {
+    	border-radius: 0;
+    }
+	}
+}
 .join-the-waitlist {
 	min-height: 645px;
   background-image: url(../img/bg-home-3.jpg);
   background-size: cover;
   background-position: left top;
+}
+.join-form {
+  display: inline-block;
+	max-width: 480px;
+	.input-group {
+		left: 20px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    * {
+    	border-radius: 0;
+    }
+	}
+	.fa-check {
+		margin-right: 10px;
+	}
 }
 /* Custom, iPhone Retina */
 

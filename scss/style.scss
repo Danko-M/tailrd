@@ -1,2 +1,9 @@
 @import 'survey'; 
 @import 'home'; 
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: $black;
+  font-weight: 300;
+}
