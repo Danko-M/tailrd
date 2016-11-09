@@ -278,6 +278,7 @@ body {
 }
 .opacity-33 {
   opacity: 0.33 !important;
+  filter: alpha(opacity=33) !important;
 }
 
 .footer {
