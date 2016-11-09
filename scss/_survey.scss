@@ -1,21 +1,4 @@
-$color: aqua;
-$black: #000;
-$white: #fff;
-$bg-dark: #363636;
-$bg-gray: #f0eded;
-$border-gray: #c8c8c8;
-$bg-footer: #363636;
-$blue: #6fadd9;
-$green: #5bc1af;
-$green-dark: #28999b;
-$txt-col-01: #555;
-$txt-col-02: #4f4f4f;
-$txt-col-03: #6a6a6a;
-
-
-span, a, strong {
-  display: inline-block;
-}
+@import 'variables';
 .surveyPage {
   .container {
     padding-top: 60px;
@@ -41,34 +24,9 @@ span, a, strong {
     }
   }
 }
-.header {
-  line-height: 80px;
-  background-color: $black;
-  .container {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
-.bg-dark {
-  background-color: $bg-dark;
-}
-.bg-gray {
-  background-color: $bg-gray;
-}
-.m-t-0 {
-  margin-top: 0;
-}
-.m-t-13 {
-  margin-top: 13px;
-}
-.m-t-md-10 {
-   @media only screen and (min-width: 768px) {
-    margin-top: 10px !important;
-  } 
-}
-.p-l-0 {
-  padding-left: 0;
-}
+
+
+
 
 .title-optional {
   margin-bottom: 30px;
@@ -255,42 +213,3 @@ span, a, strong {
   filter: alpha(opacity=33) !important;
 }
 
-.footer {
-  font-size: 14px;
-  background-color: $bg-dark;
-  color: $white;
-  a {
-    color: inherit;
-  }
-  .col-sm-4 {
-    padding-left: 0;
-    @media only screen and (min-width: 768px) {
-      text-align: right;
-    }
-  }
-  .social {
-    font-size: 26px;
-    .fa-twitter {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-  }
-  .copy {
-    margin-top: 20px;
-    a {
-      @media only screen and (min-width: 480px) {
-        padding-right: 10px;
-        & + a {
-          padding-left: 10px;
-        }        
-      }
-    }
-  }
-  .logo {
-    margin-top: 30px;
-    @media only screen and (min-width: 768px) {
-      margin-top: 0;
-    }
-    margin-bottom: 30px;
-  }
-}

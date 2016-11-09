@@ -7,3 +7,83 @@ body {
   color: $black;
   font-weight: 300;
 }
+span, a, strong {
+  display: inline-block;
+}
+.p-l-0 {
+  padding-left: 0;
+}
+.bg-dark {
+  background-color: $bg-dark;
+}
+.bg-gray {
+  background-color: $bg-gray;
+}
+.m-t-0 {
+  margin-top: 0;
+}
+.m-t-13 {
+  margin-top: 13px;
+}
+.m-t-md-10 {
+   @media only screen and (min-width: 768px) {
+    margin-top: 10px !important;
+  } 
+}
+.header {
+  line-height: 80px;
+  background-color: $black;
+  .container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  &.inverse {
+    background-color: $white;
+  }
+}
+.footer {
+  font-size: 14px;
+  background-color: $bg-dark;
+  color: $white;
+  .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @media only screen and (min-width: 1200px) {
+      padding-bottom: 200px;
+    }
+  }
+  a {
+    color: inherit;
+  }
+  .col-sm-4 {
+    padding-left: 0;
+    @media only screen and (min-width: 768px) {
+      text-align: right;
+    }
+  }
+  .social {
+    font-size: 26px;
+    .fa-twitter {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+  .copy {
+    margin-top: 20px;
+    a {
+      @media only screen and (min-width: 480px) {
+        padding-right: 10px;
+        & + a {
+          padding-left: 10px;
+        }        
+      }
+    }
+  }
+  .logo {
+    margin-top: 30px;
+    @media only screen and (min-width: 768px) {
+      margin-top: 0;
+    }
+    margin-bottom: 30px;
+  }
+}
