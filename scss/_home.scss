@@ -8,13 +8,13 @@
 	}
   background-size: cover;
 }
-.hero-title {
+.hero-txt-01 {
 	font-family: 'Lato', sans-serif;
 	line-height: 1.25;
 	font-size: 38px;
 	font-weight: 300;
 }
-.hero-lunching-soon {
+.hero-txt-02 {
 	position: relative;
 	margin-top: 70px;
 	margin-bottom: 60px;
@@ -40,6 +40,23 @@
 	  right: 140px;
 	}
 }
+.hero-txt-03 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 22px;
+}
+.hero-txt-04 {
+	margin-bottom: 15px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 26px;
+}
+.hero-txt-05 {
+	margin-top: 20px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 13px;
+}
 .hero-form {
   display: inline-block;
 	max-width: 400px;
@@ -49,11 +66,21 @@
     }
 	}
 }
+.title-sm {
+	font-size: 18px;
+	font-weight: 700;
+}
 .btn-sign-me-up {
 	color: $white;
 	background-color: $blue2;
 	&:hover, &:focus {
 		color: $white;
+	}
+}
+.scroll-animation {
+	background-color: $bg-gray-home;
+	@media only screen and (min-width: 1200px) {
+  	background-image: url(../img/bg-wood.jpg);
 	}
 }
 .join-the-waitlist {
