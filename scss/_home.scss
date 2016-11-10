@@ -49,6 +49,13 @@
     }
 	}
 }
+.btn-sign-me-up {
+	color: $white;
+	background-color: $blue2;
+	&:hover, &:focus {
+		color: $white;
+	}
+}
 .join-the-waitlist {
 	min-height: 645px;
 	background-color: #f5f1ee;
