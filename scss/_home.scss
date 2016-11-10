@@ -9,7 +9,7 @@
   background-size: cover;
 }
 .hero-title {
-	margin-top: 70px;
+	font-family: 'Lato', sans-serif;
 	line-height: 1.25;
 	font-size: 38px;
 	font-weight: 300;
@@ -18,12 +18,13 @@
 	position: relative;
 	margin-top: 70px;
 	margin-bottom: 60px;
+	font-family: 'Lato', sans-serif;
 	font-size: 26px;
 	font-style: italic;
 	font-weight: 400;
 	&:before,
 	&:after {
-	  width: 150px;
+	  width: 110px;
 	  position: absolute;
 	  top: 0.73em;
 	  border-top: 1px solid $black;
@@ -33,10 +34,10 @@
 		}
 	}
 	&:before {
-	  left: 80px;
+	  left: 140px;
 	}
 	&:after {
-	  right: 80px;
+	  right: 140px;
 	}
 }
 .hero-form {
