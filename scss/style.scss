@@ -10,6 +10,16 @@ body {
 span, a, strong {
   display: inline-block;
 }
+.container {
+  padding-top: 60px;
+  padding-bottom: 50px;
+} 
+p {
+  margin-bottom: 25px;
+}
+strong {
+  font-weight: 700;
+}
 .p-l-0 {
   padding-left: 0;
 }

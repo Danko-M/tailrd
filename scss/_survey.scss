@@ -1,32 +1,4 @@
 @import 'variables';
-.surveyPage {
-  .container {
-    padding-top: 60px;
-    padding-bottom: 50px;
-  } 
-  p {
-    margin-bottom: 25px;
-  }
-  strong {
-    font-weight: 700;
-  }
-  .btn {
-    min-width: 155px;
-    margin-top: 50px;
-    font-size: 18px;
-    color: $white;
-    background-color: darken($blue , 10);
-    border-radius: 0;
-    border: 0;
-    &:focus {
-      color: $white;
-      background-color: darken($blue , 10);
-    }
-  }
-}
-
-
-
 
 .title-optional {
   margin-bottom: 30px;
@@ -213,3 +185,16 @@
   filter: alpha(opacity=33) !important;
 }
 
+.btn-survey {
+  min-width: 155px;
+  margin-top: 50px;
+  font-size: 18px;
+  color: $white;
+  background-color: darken($blue , 10);
+  border-radius: 0;
+  border: 0;
+  &:focus, &:hover {
+    color: $white;
+    background-color: darken($blue , 10);
+  }
+}
