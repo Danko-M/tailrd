@@ -77,6 +77,32 @@
 		color: $white;
 	}
 }
+.video-container {
+	max-width: 847px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+	.title-sm, p {
+		max-width: 525px;
+		margin: 0 auto;
+	}
+	p {
+		position: relative;
+		margin-top: 25px;
+		margin-bottom: 60px;
+		font-size: $font-16;
+		&:after {
+			position: relative;
+			top: 35px;
+			display: block;
+			width: 60px;
+			height: 5px;
+			margin: auto;
+			content: "";
+			background: $blue2;
+		}
+	}
+}
 .scroll-animation {
 	background-color: $bg-gray-home;
   	background-image: url(../img/bg-wood.jpg);
