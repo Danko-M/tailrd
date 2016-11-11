@@ -111,6 +111,56 @@
   	background-image: url(../img/bg-wood.jpg);
 	}
 }
+.title-md {
+	position: relative;
+	margin-bottom: 70px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	&:after {
+		position: relative;
+		top: 10px;
+		display: block;
+		width: 60px;
+		height: 5px;
+		margin: auto;
+		content: "";
+		background: $blue2;
+	}
+}
+.how-it-works {
+	.title-md {
+		text-align: center;
+	}
+	img {
+		float: left;
+		margin-right: 30px;
+	}
+	.mid {
+		img {
+			margin-right: 10px;
+		}
+	}
+	p {
+		overflow: auto;
+	}
+	@media only screen and (min-width: 768px) {
+		text-align: center;
+		img {
+			float: none;
+			margin-right: 0;
+		}
+		.title-sm {
+			margin-top: 55px;
+			margin-bottom: 15px;
+		}
+		.mid {
+			img {
+				margin-right: 0;
+			}
+		}	
+	}
+}
 .join-the-waitlist {
 	min-height: 645px;
 	background-color: #f5f1ee;
