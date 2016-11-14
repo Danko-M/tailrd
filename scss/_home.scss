@@ -55,7 +55,7 @@
 .hero-txt-05 {
 	margin-top: 20px;
 	font-family: 'Lato', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 16px;
 }
 .hero-form {
@@ -69,7 +69,6 @@
 }
 .title-sm {
 	font-size: 18px;
-	font-weight: 700;
 	font-weight: 600;
 }
 .btn-sign-me-up {
@@ -130,7 +129,6 @@
 }
 .sc-anim-tile-02 {
 	font-size: 18px;
-	font-weight: 700;
 	font-weight: 600;
 	@media only screen and (max-width: 767px) {
 		margin-bottom: 10px;
@@ -141,7 +139,6 @@
 	margin-bottom: 70px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 30px;
-	font-weight: 700;
 	font-weight: 600;
 	&:after {
 		position: relative;
@@ -167,7 +164,7 @@
 		&:before,
 		&:after {
 		  position: absolute;
-			top: 10px;
+			top: 20px;
 			display: none;
 			margin: auto;
 	  	content: url(../img/arrow.png);
