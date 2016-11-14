@@ -158,6 +158,24 @@
 		margin-right: 30px;
 	}
 	.mid {
+		position: relative;
+		&:before,
+		&:after {
+		  position: absolute;
+			top: 10px;
+			display: none;
+			margin: auto;
+	  	content: url(../img/arrow.png);
+			@media only screen and (min-width: 768px) {
+		  	display: inline-block;			
+			}
+		}	
+		&:before {
+		  left: -20px;
+		}
+		&:after {
+		  right: -20px;
+		}
 		img {
 			margin-right: 10px;
 		}
