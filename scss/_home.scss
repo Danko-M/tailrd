@@ -118,6 +118,17 @@
   	}
 	}
 }
+.sc-anim-tile-01 {
+	@media only screen and (min-width: 768px) {
+		font-size: 30px;
+	}
+}
+.sc-anim-tile-02 {
+	font-size: 18px;
+	font-weight: 700;
+	@media only screen and (min-width: 768px) {
+	}
+}
 .title-md {
 	position: relative;
 	margin-bottom: 70px;
