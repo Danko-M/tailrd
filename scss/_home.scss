@@ -11,10 +11,11 @@
 .hero-txt-01 {
 	font-family: 'Lato', sans-serif;
 	line-height: 1.25;
-	font-size: 24px;
-	font-weight: 300;
+	font-size: 26px;
+	font-weight: 400;
 	@media only screen and (min-width: 768px) {
 		font-size: 42px;
+		font-weight: 300;
 	}	
 }
 .hero-txt-02 {
@@ -29,16 +30,12 @@
 	&:after {
 	  position: relative;
 		top: -10px;
-		display: none;
+  	display: block;			
+  	content: '';
 		width: 60px;
 		height: 5px;
 		margin: auto;
-		content: "";
 		background: $blue2;
-		@media only screen and (min-width: 1200px) {
-	  	content: '';
-	  	display: block;			
-		}
 	}	
 	&:after {
 	  top: 10px;
@@ -109,8 +106,8 @@
 }
 .scroll-animation {
 	background-color: $bg-gray-home;
-  	background-image: url(../img/bg-wood.jpg);
-  	background-size: contain;
+	background-image: url(../img/bg-wood.jpg);
+	background-size: contain;
 	@media only screen and (min-width: 768px) {
   	background-image: url(../img/bg-wood.jpg);
   	background-attachment: fixed;
@@ -120,8 +117,12 @@
   		border-left: 5px solid $blue2;
   	}
 	}
+	.visible-xs-block p {
+		font-size: 16px;
+	}
 }
 .sc-anim-tile-01 {
+	font-size: 24px;
 	@media only screen and (min-width: 768px) {
 		font-size: 30px;
 	}
@@ -129,7 +130,8 @@
 .sc-anim-tile-02 {
 	font-size: 18px;
 	font-weight: 700;
-	@media only screen and (min-width: 768px) {
+	@media only screen and (max-width: 767px) {
+		margin-bottom: 10px;
 	}
 }
 .title-md {
@@ -214,7 +216,10 @@
   }
 }
 .join-title-01 {
+	font-size: 26px;
+	margin-bottom: 20px;
 	@media only screen and (min-width: 768px) {
+		margin-bottom: 0;
 		font-size: 28px;
 		font-weight: 700;		
 	}
@@ -244,7 +249,10 @@
   display: inline-block;
 	max-width: 480px;
 	.input-group {
-		left: 20px;
+		left: 0;
+		@media only screen and (min-width: 768px) {
+			left: 20px;
+		}
     margin-top: 50px;
     margin-bottom: 100px;
     * {
