@@ -11,8 +11,11 @@
 .hero-txt-01 {
 	font-family: 'Lato', sans-serif;
 	line-height: 1.25;
-	font-size: 38px;
+	font-size: 24px;
 	font-weight: 300;
+	@media only screen and (min-width: 768px) {
+		font-size: 42px;
+	}	
 }
 .hero-txt-02 {
 	position: relative;
@@ -180,13 +183,43 @@
 	}
 }
 .join-the-waitlist {
-	min-height: 645px;
 	background-color: #f5f1ee;
 	@media only screen and (min-width: 1200px) {
   	background-image: url(../img/bg-home-3.jpg);
 	}
   background-size: cover;
   background-position: left top;
+  small {
+  	font-size: 11px;
+    font-weight: 400;
+  }
+}
+.join-title-01 {
+	@media only screen and (min-width: 768px) {
+		font-size: 28px;
+		font-weight: 700;		
+	}
+}
+.join-title-02 {
+	position: relative;
+	margin-bottom: 60px;
+	font-family: 'Lato', sans-serif;
+	line-height: 1.25;
+	font-size: 20px;
+	font-weight: 100;
+	@media only screen and (min-width: 768px) {
+		font-size: 54px;
+	}
+	&:after {
+		position: relative;
+    top: 25px;
+    display: block;
+    width: 60px;
+    height: 5px;
+    margin: auto;
+    content: "";
+    background: $blue2;
+	}
 }
 .join-form {
   display: inline-block;
