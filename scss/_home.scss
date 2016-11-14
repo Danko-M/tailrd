@@ -183,6 +183,7 @@
 	}
 }
 .join-the-waitlist {
+	position: relative;
 	background-color: #f5f1ee;
 	@media only screen and (min-width: 1200px) {
   	background-image: url(../img/bg-home-3.jpg);
@@ -234,6 +235,15 @@
 	}
 	.fa-check {
 		margin-right: 10px;
+	}
+}
+.as-seen-in {
+	text-align: center;
+	@media only screen and (min-width: 1200px) {
+		li {
+			width: 20%;
+			margin-right: -5px;
+		}
 	}
 }
 /* Custom, iPhone Retina */
