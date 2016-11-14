@@ -24,20 +24,21 @@
 	font-weight: 400;
 	&:before,
 	&:after {
-	  width: 110px;
-	  position: absolute;
-	  top: 0.73em;
-	  border-top: 1px solid $black;
+	  position: relative;
+		top: -10px;
+		display: none;
+		width: 60px;
+		height: 5px;
+		margin: auto;
+		content: "";
+		background: $blue2;
 		@media only screen and (min-width: 1200px) {
 	  	content: '';
-	  	display: inline-block;			
+	  	display: block;			
 		}
-	}
-	&:before {
-	  left: 140px;
-	}
+	}	
 	&:after {
-	  right: 140px;
+	  top: 10px;
 	}
 }
 .hero-txt-03 {
