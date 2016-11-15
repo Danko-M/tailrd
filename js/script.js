@@ -107,3 +107,40 @@ togglesContainer.find(togglesContainerItems).on('click', function() {
 	$this.toggleClass('opacity-33');
 	$this.find(togglesContainerItemsCheckIcon).toggleClass('hidden');
 });
+
+// scroll nimation (home page)
+
+// var waypoint = new Waypoint({
+//   element: document.getElementById('scroll-animation'),
+//   handler: function(direction) {
+//     if(direction === 'down'){
+//       console.log('in')
+//     } else if(direction === 'up'){
+//       console.log('up');
+//     } 
+//   },
+//   offset: '50%'
+// })
+var continuousElements = document.getElementsByClassName('continuous-true');
+for (var i = 0; i < continuousElements.length; i++) {
+  new Waypoint({
+    element: continuousElements[i],
+    handler: function(direction) {
+      if (direction === 'down') {
+        console.log($(this.element).find('.sc-anim-tile-01').text());
+      }
+    },
+    offset: '50%'
+  });
+
+  new Waypoint({
+    element: continuousElements[i],
+    handler: function(direction) {
+      if (direction === 'up') {
+        console.log($(this.element).find('.sc-anim-tile-01').text());
+      }
+    },
+    offset: '25%'
+  })
+}
+
