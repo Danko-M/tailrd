@@ -3,10 +3,11 @@
 .hero {
 	min-height: 560px;
   background-image: url(../img/bg-home-hero.jpg);
-  background-position: center bottom;		
-  background-size: auto 100%;
+  background-position: center top;		
+  background-size: auto 115%;
   background-repeat: no-repeat;
-	@media only screen and (min-width: 1200px) {
+	@media only screen and (min-width: 768px) {
+  	background-position: center bottom;		
   	background-size: cover;
 	}
 }
@@ -66,9 +67,6 @@
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
-	@media only screen and (max-width: 767px) {
-		background: rgba(254, 248, 243, 0.75);
-	}
 }
 .hero-form {
   display: inline-block;
