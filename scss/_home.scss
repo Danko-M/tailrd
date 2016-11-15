@@ -2,11 +2,13 @@
 
 .hero {
 	min-height: 560px;
-	background-color: #f5f1ee;
+  background-image: url(../img/bg-home-hero.jpg);
+  background-position: center bottom;		
+  background-size: auto 100%;
+  background-repeat: no-repeat;
 	@media only screen and (min-width: 1200px) {
-  	background-image: url(../img/bg-home-hero.jpg);		
+  	background-size: cover;
 	}
-  background-size: cover;
 }
 .hero-txt-01 {
 	font-family: 'Lato', sans-serif;
@@ -15,7 +17,6 @@
 	font-weight: 400;
 	@media only screen and (min-width: 768px) {
 		font-size: 42px;
-		font-weight: 300;
 	}	
 }
 .hero-txt-02 {
@@ -89,7 +90,7 @@
 	}
 	p {
 		position: relative;
-		margin-top: 25px;
+		margin-top: 10px;
 		margin-bottom: 60px;
 		font-size: $font-16;
 		&:after {
@@ -112,7 +113,7 @@
   	background-image: url(../img/bg-wood.jpg);
   	background-attachment: fixed;
   	p {
-  		margin-top: 40px;
+  		margin-top: 20px;
   		padding-left: 20px;
   		border-left: 5px solid $blue2;
   	}
@@ -122,6 +123,7 @@
 	}
 }
 .sc-anim-tile-01 {
+	margin-bottom: 10px;
 	font-size: 24px;
 	@media only screen and (min-width: 768px) {
 		font-size: 30px;
