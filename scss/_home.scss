@@ -57,12 +57,18 @@
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	font-size: 26px;
+	@media only screen and (min-width: 768px) {
+		font-size: 28px;
+	}
 }
 .hero-txt-05 {
 	margin-top: 20px;
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
+	@media only screen and (max-width: 767px) {
+		background: rgba(254, 248, 243, 0.75);
+	}
 }
 .hero-form {
   display: inline-block;
@@ -236,7 +242,7 @@
   }
 }
 .join-title-01 {
-	font-size: 26px;
+	font-size: 20px;
 	margin-bottom: 20px;
 	@media only screen and (min-width: 768px) {
 		margin-bottom: 0;
@@ -249,10 +255,11 @@
 	margin-bottom: 60px;
 	font-family: 'Lato', sans-serif;
 	line-height: 1.25;
-	font-size: 20px;
-	font-weight: 100;
+	font-size: 30px;
+	font-weight: 400;
 	@media only screen and (min-width: 768px) {
 		font-size: 54px;
+		font-weight: 100;
 	}
 	&:after {
 		position: relative;
