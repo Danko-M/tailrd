@@ -124,6 +124,14 @@
   		margin-top: 20px;		
   	}
 	}
+	#scroll-animation {
+		position: relative;
+	}
+	.anim-base {
+		position: absolute;
+		left: 0;
+    z-index: 5;
+	}
 	.continuous-true {
 		@media only screen and (min-width: 768px) {
 			min-height: 364px;
@@ -142,13 +150,16 @@
 			padding-top: 6.5%;
 		}
 		@media only screen and (min-width: 992px) {
-			padding-top: 10%;
-		}	
-		@media only screen and (min-width: 1200px) {
 			padding-top: 15%;
 		}	
+		// @media only screen and (min-width: 1200px) {
+		// 	padding-top: 15%;
+		// }	
 	}
 	.slides-container {
+		position: absolute;
+		// overflow: hidden;
+		background-color: #fff;
 		@media only screen and (min-width: 768px) {
 			min-height: 364px;
 		}
@@ -163,16 +174,21 @@
 	}
 	.slides {
 		position: absolute;
-		top: 0%;
+		top: -100%;
 		left: 0;
-		padding: 0 15px;
+		// padding: 0 15px;
 	}
-
+	.fixed {
+		position: fixed;
+		top: 15%;
+	}
 	.is-fixed {
-		top: 11%;
+    position: fixed;
+		top: 25%;
+		left: auto;
     width: 345px;
     padding: 0px 0px;
-    position: fixed;
+    
 		@media only screen and (min-width: 992px) {
 			width: 455px;
 		}	
