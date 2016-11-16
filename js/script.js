@@ -133,9 +133,10 @@ for (var i = 0; i < continuousElements.length; i++) {
     element: continuousElements[i],
     handler: function(direction) {
       if (direction === 'down') {
-        // console.log($(this.element).find('.sc-anim-tile-01').text());
+        $('.slides').animate({top: '-=100%'}, 400);
       }
     },
+    // offset: '50%'
     offset: '50%'
   });
 
@@ -143,14 +144,14 @@ for (var i = 0; i < continuousElements.length; i++) {
     element: continuousElements[i],
     handler: function(direction) {
       if (direction === 'up') {
-        // console.log($(this.element).find('.sc-anim-tile-01').text());
+        $('.slides').animate({top: '+=100%'}, 400);
       }
     },
-    offset: '25%'
+    // offset: '25%'
+    offset: '50%'
   })
 }
 
-////
 
 new Waypoint({
     element: animationSection,
@@ -159,6 +160,7 @@ new Waypoint({
         console.log('anim down');
         backgroundEl.style.backgroundAttachment = "fixed";
         $('.slides-container').addClass('fixed');
+        $('.slides-container').removeClass('is-bottom');
       }
     },
     offset: '20%'
@@ -171,7 +173,6 @@ new Waypoint({
         console.log('anim up');
         backgroundEl.style.backgroundAttachment = "scroll";
         $('.slides-container').removeClass('fixed');
-        // $('.slides-container').css({'position': 'absolute', 'bottom': '0px'});
       }
     },
     offset: '20%'
@@ -184,7 +185,7 @@ new Waypoint({
         console.log('hiw down');
         backgroundEl.style.backgroundAttachment = "scroll";
         $('.slides-container').removeClass('fixed');
-        // $('.slides-container').css({'position': 'absolute', 'bottom': '0px'});
+        $('.slides-container').addClass('is-bottom');
       }
     },
     offset: '80%'
@@ -197,6 +198,7 @@ new Waypoint({
         console.log('hiw up');
         backgroundEl.style.backgroundAttachment = "fixed";
         $('.slides-container').addClass('fixed');
+        $('.slides-container').removeClass('is-bottom');
       }
     },
     offset: '80%'
