@@ -120,14 +120,19 @@ togglesContainer.find(togglesContainerItems).on('click', function() {
 //     } 
 //   },
 //   offset: '50%'
-// })
-var continuousElements = document.getElementsByClassName('continuous-true');
+// });
+
+var continuousElements = document.getElementsByClassName('continuous-true'),
+    backgroundEl = document.getElementById('scroll-animation-bg'),
+    animationSection = document.getElementById('scroll-animation'),
+    howItWorksSection = document.getElementById('how-it-works');
+
 for (var i = 0; i < continuousElements.length; i++) {
   new Waypoint({
     element: continuousElements[i],
     handler: function(direction) {
       if (direction === 'down') {
-        console.log($(this.element).find('.sc-anim-tile-01').text());
+        // console.log($(this.element).find('.sc-anim-tile-01').text());
       }
     },
     offset: '50%'
@@ -137,10 +142,54 @@ for (var i = 0; i < continuousElements.length; i++) {
     element: continuousElements[i],
     handler: function(direction) {
       if (direction === 'up') {
-        console.log($(this.element).find('.sc-anim-tile-01').text());
+        // console.log($(this.element).find('.sc-anim-tile-01').text());
       }
     },
     offset: '25%'
   })
 }
+
+new Waypoint({
+    element: animationSection,
+    handler: function(direction) {
+      if (direction === 'down') {
+        console.log('anim down');
+        backgroundEl.style.backgroundAttachment = "fixed";
+      }
+    },
+    offset: '20%'
+  });
+
+new Waypoint({
+    element: animationSection,
+    handler: function(direction) {
+      if (direction === 'up') {
+        console.log('anim up');
+        backgroundEl.style.backgroundAttachment = "scroll";
+      }
+    },
+    offset: '20%'
+  });
+
+new Waypoint({
+    element: howItWorksSection,
+    handler: function(direction) {
+      if (direction === 'down') {
+        console.log('hiw down');
+        backgroundEl.style.backgroundAttachment = "scroll";
+      }
+    },
+    offset: '80%'
+  });
+
+new Waypoint({
+    element: howItWorksSection,
+    handler: function(direction) {
+      if (direction === 'up') {
+        console.log('hiw up');
+        backgroundEl.style.backgroundAttachment = "fixed";
+      }
+    },
+    offset: '80%'
+  });
 
