@@ -117,29 +117,92 @@
 .scroll-animation {
 	background-color: $bg-gray-home;
 	background-image: url(../img/bg-wood.jpg);
-	background-size: contain;
+	background-size: contain;	
 	p {
-  		padding-left: 20px;
-  		border-left: 5px solid $blue2;
+		padding-left: 20px;
+		border-left: 5px solid $blue2;
 	}
 	@media only screen and (min-width: 768px) {
-  	background-image: url(../img/bg-wood.jpg);
-  	background-attachment: fixed;
   	p {
   		margin-top: 20px;		
   	}
 	}
-  	.content {
-  		@media only screen and (min-width: 768px) {
-  			padding-top: 6.5%;
-  		}
-  		@media only screen and (min-width: 992px) {
-  			padding-top: 10%;
-  		}	
-  		@media only screen and (min-width: 1200px) {
-  			padding-top: 15%;
-  		}	
-  	}
+	#scroll-animation {
+		position: relative;
+	}
+	.anim-base {
+		position: absolute;
+		left: 0;
+	}
+	.continuous-true {
+		@media only screen and (min-width: 768px) {
+			min-height: 364px;
+		}
+
+		@media only screen and (min-width: 992px) {
+			min-height: 480px;
+		}
+
+		@media only screen and (min-width: 1200px) {
+			min-height: 585px;
+		}
+	}
+	.content {
+		@media only screen and (min-width: 768px) {
+			padding-top: 6.5%;
+		}
+		@media only screen and (min-width: 992px) {
+			padding-top: 15%;
+		}	
+		// @media only screen and (min-width: 1200px) {
+		// 	padding-top: 15%;
+		// }	
+	}
+	.slides-container {
+		position: absolute;
+		overflow: hidden;
+		@media only screen and (min-width: 768px) {
+			width: 345px;
+			min-height: 364px;
+		}
+
+		@media only screen and (min-width: 992px) {
+			width: 455px;
+			min-height: 480px;
+		}
+
+		@media only screen and (min-width: 1200px) {
+			width: 555px;
+			min-height: 585px;
+		}
+	}
+	.slides {
+		position: absolute;
+		top: 200%;
+		left: 0;	
+		// transition: top 200ms ease-in-out;
+	}
+	.fixed {
+    position: fixed;
+		top: 15%;
+		left: auto;
+    width: 345px;
+    padding: 0px 0px;   
+		@media only screen and (min-width: 992px) {
+			top: 10%;
+			width: 455px;
+		}	
+		@media only screen and (min-width: 1200px) {
+			top: 15%;
+			width: 555px;
+		}	
+	}
+	.is-bottom {
+		bottom: 4%;
+		@media only screen and (min-width: 992px) {
+			bottom: 0%;
+		}
+	}
 	.visible-xs-block p {
 		font-size: 16px;
 	}

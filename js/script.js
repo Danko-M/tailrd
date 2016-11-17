@@ -107,3 +107,88 @@ togglesContainer.find(togglesContainerItems).on('click', function() {
 	$this.toggleClass('opacity-33');
 	$this.find(togglesContainerItemsCheckIcon).toggleClass('hidden');
 });
+
+// scroll nimation (home page)
+
+var continuousElements = document.getElementsByClassName('continuous-true'),
+    backgroundEl = document.getElementById('scroll-animation-bg'),
+    animationSection = document.getElementById('scroll-animation'),
+    animBase = $('#anim-base'),
+    howItWorksSection = document.getElementById('how-it-works');
+
+for (var i = 0; i < continuousElements.length; i++) {
+  new Waypoint({
+    element: continuousElements[i],
+    handler: function(direction) {
+      if (direction === 'down') {
+        $('.slides').animate({top: '-=100%'}, 400);
+      }
+    },
+    // offset: '50%'
+    offset: '50%'
+  });
+
+  new Waypoint({
+    element: continuousElements[i],
+    handler: function(direction) {
+      if (direction === 'up') {
+        $('.slides').animate({top: '+=100%'}, 400);
+      }
+    },
+    // offset: '25%'
+    offset: '50%'
+  })
+}
+
+
+new Waypoint({
+    element: animationSection,
+    handler: function(direction) {
+      if (direction === 'down') {
+        console.log('anim down');
+        backgroundEl.style.backgroundAttachment = "fixed";
+        $('.slides-container').addClass('fixed');
+        $('.slides-container').removeClass('is-bottom');
+      }
+    },
+    offset: '7%'
+  });
+
+new Waypoint({
+    element: animationSection,
+    handler: function(direction) {
+      if (direction === 'up') {
+        console.log('anim up');
+        backgroundEl.style.backgroundAttachment = "scroll";
+        $('.slides-container').removeClass('fixed');
+      }
+    },
+    offset: '7%'
+  });
+
+new Waypoint({
+    element: howItWorksSection,
+    handler: function(direction) {
+      if (direction === 'down') {
+        console.log('hiw down');
+        backgroundEl.style.backgroundAttachment = "scroll";
+        $('.slides-container').removeClass('fixed');
+        $('.slides-container').addClass('is-bottom');
+      }
+    },
+    offset: '80%'
+  });
+
+new Waypoint({
+    element: howItWorksSection,
+    handler: function(direction) {
+      if (direction === 'up') {
+        console.log('hiw up');
+        backgroundEl.style.backgroundAttachment = "fixed";
+        $('.slides-container').addClass('fixed');
+        $('.slides-container').removeClass('is-bottom');
+      }
+    },
+    offset: '80%'
+  });
+
