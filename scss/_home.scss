@@ -190,16 +190,19 @@
 		display: inline-block;
 	  width: 12px;
 	  height: 12px;
-	  border: 1px solid $blue2;
-	  background-color: $white;
-	  // transform: scale(.75);
-	  margin-bottom: 15px;
+	  // border: 1px solid $blue2;
+	  // background-color: $white;
+	  
+	  border: 4px solid #f7f3f0;
+	  background-color: $blue2;
 	  border-radius: 50%;
-	  transition: all 300ms ease-in-out;
+	  transition: border 150ms ease-in-out;
 	}
 	.active {
+	  border: 0px solid #f7f3f0;
 	  // border: 6px solid $blue2;
-	  background-color: $blue2;
+	  // width: 15px;
+	  // height: 15px;
 		// transform: scale(1.25);
 		// border: 3px solid $blue2;
 	}
