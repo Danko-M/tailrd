@@ -124,7 +124,6 @@ for (var i = 0; i < continuousElements.length; i++) {
         $('.slides').animate({top: '-=100%'}, 400);
       }
     },
-    // offset: '50%'
     offset: '50%'
   });
 
@@ -135,7 +134,6 @@ for (var i = 0; i < continuousElements.length; i++) {
         $('.slides').animate({top: '+=100%'}, 400);
       }
     },
-    // offset: '25%'
     offset: '50%'
   })
 }
