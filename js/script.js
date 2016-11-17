@@ -117,38 +117,27 @@ var continuousElements = document.getElementsByClassName('continuous-true'),
     howItWorksSection = document.getElementById('how-it-works');
 
 for (var i = 0; i < continuousElements.length; i++) {
+  
   new Waypoint({
     element: continuousElements[i],
-    index: i,
     handler: function(direction) {
       if (direction === 'down') {
         $('.slides').animate({top: '-=100%'}, 300);
-        // $('.indicators').find("li").removeClass('active');
-        // $('.indicators').find("li:eq("+ this.options.index +")").addClass('active');
       }
     },
     offset: '50%'
   });
 
-  new Waypoint({
+  new Waypoint({    
     element: continuousElements[i],
-    indexx: i,
     handler: function(direction) {
       if (direction === 'up') {
         $('.slides').animate({top: '+=100%'}, 300);
-        // $('.indicators').find("li").removeClass('active');
-        // $('.indicators').find("li:eq("+ this.options.index +")").addClass('active');
-        console.log(this);
       }
     },
     offset: '50%'
   })
-}
 
-
-
-
-for (var i = 0; i < continuousElements.length; i++) {
   new Waypoint({
     element: continuousElements[i],
     index: i,
@@ -170,10 +159,10 @@ for (var i = 0; i < continuousElements.length; i++) {
         $('.indicators').find("li:eq("+ this.options.index +")").addClass('active');  
       }    
     },
-    offset: '5%'
+    offset: '-10%'
   });
+  
 }
-
 
 
 
