@@ -119,9 +119,12 @@ var continuousElements = document.getElementsByClassName('continuous-true'),
 for (var i = 0; i < continuousElements.length; i++) {
   new Waypoint({
     element: continuousElements[i],
+    index: i,
     handler: function(direction) {
       if (direction === 'down') {
         $('.slides').animate({top: '-=100%'}, 300);
+        $('.indicators').find("li").removeClass('active');
+        $('.indicators').find("li:eq("+ this.options.index +")").addClass('active');
       }
     },
     offset: '50%'
@@ -129,9 +132,12 @@ for (var i = 0; i < continuousElements.length; i++) {
 
   new Waypoint({
     element: continuousElements[i],
+    index: i,
     handler: function(direction) {
       if (direction === 'up') {
         $('.slides').animate({top: '+=100%'}, 300);
+        $('.indicators').find("li").removeClass('active');
+        $('.indicators').find("li:eq("+ this.options.index +")").addClass('active');
       }
     },
     offset: '50%'

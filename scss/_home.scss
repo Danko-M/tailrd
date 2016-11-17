@@ -176,6 +176,35 @@
 			min-height: 585px;
 		}
 	}
+.indicators {
+  position: absolute;
+	display: inline-block;
+	min-height: 100px;
+	width: 20px;
+  top: 40%;
+  right: 5%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+	li {
+		// display: inline-block;
+	  width: 10px;
+	  height: 10px;
+	  border: 1px solid #12939A;
+	  background-color: #12939A;
+	  transform: scale(.75);
+	  margin-bottom: 5px;
+	  @media only screen and (min-width: 992px) {
+			margin-bottom: 15px;
+	  }
+	  border-radius: 50%;
+	  transition: all 150ms ease-in-out;
+	}
+	.active {
+	  background-color: transparent;
+		transform: scale(1.25);
+	}
+}
 	.slides {
 		position: absolute;
 		top: 200%;
