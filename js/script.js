@@ -145,7 +145,6 @@ new Waypoint({
     element: animationSection,
     handler: function(direction) {
       if (direction === 'down') {
-        console.log('anim down');
         backgroundEl.style.backgroundAttachment = "fixed";
         $('.slides-container').addClass('fixed');
         $('.slides-container').removeClass('is-bottom');
@@ -158,7 +157,6 @@ new Waypoint({
     element: animationSection,
     handler: function(direction) {
       if (direction === 'up') {
-        console.log('anim up');
         backgroundEl.style.backgroundAttachment = "scroll";
         $('.slides-container').removeClass('fixed');
       }
@@ -170,7 +168,6 @@ new Waypoint({
     element: howItWorksSection,
     handler: function(direction) {
       if (direction === 'down') {
-        console.log('hiw down');
         backgroundEl.style.backgroundAttachment = "scroll";
         $('.slides-container').removeClass('fixed');
         $('.slides-container').addClass('is-bottom');
@@ -183,7 +180,6 @@ new Waypoint({
     element: howItWorksSection,
     handler: function(direction) {
       if (direction === 'up') {
-        console.log('hiw up');
         backgroundEl.style.backgroundAttachment = "fixed";
         $('.slides-container').addClass('fixed');
         $('.slides-container').removeClass('is-bottom');
