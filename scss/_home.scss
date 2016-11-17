@@ -192,14 +192,14 @@
 	  width: 12px;
 	  height: 12px;
 	  border: 1px solid $blue2;
-	  background-color: $blue2;
+	  background-color: transparent;
 	  // transform: scale(.75);
 	  margin-bottom: 15px;
 	  border-radius: 50%;
 	  transition: all 150ms ease-in-out;
 	}
 	.active {
-	  background-color: transparent;
+	  background-color: $blue2;
 		// transform: scale(1.25);
 		// border: 3px solid $blue2;
 	}
