@@ -170,7 +170,7 @@ for (var i = 0; i < continuousElements.length; i++) {
         $('.indicators').find("li:eq("+ this.options.index +")").addClass('active');  
       }    
     },
-    offset: '10%'
+    offset: '5%'
   });
 }
 
