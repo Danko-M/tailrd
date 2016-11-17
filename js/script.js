@@ -110,18 +110,6 @@ togglesContainer.find(togglesContainerItems).on('click', function() {
 
 // scroll nimation (home page)
 
-// var waypoint = new Waypoint({
-//   element: document.getElementById('scroll-animation'),
-//   handler: function(direction) {
-//     if(direction === 'down'){
-//       console.log('in')
-//     } else if(direction === 'up'){
-//       console.log('up');
-//     } 
-//   },
-//   offset: '50%'
-// });
-
 var continuousElements = document.getElementsByClassName('continuous-true'),
     backgroundEl = document.getElementById('scroll-animation-bg'),
     animationSection = document.getElementById('scroll-animation'),
@@ -163,7 +151,7 @@ new Waypoint({
         $('.slides-container').removeClass('is-bottom');
       }
     },
-    offset: '20%'
+    offset: '7%'
   });
 
 new Waypoint({
@@ -175,7 +163,7 @@ new Waypoint({
         $('.slides-container').removeClass('fixed');
       }
     },
-    offset: '20%'
+    offset: '7%'
   });
 
 new Waypoint({
