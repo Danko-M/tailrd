@@ -121,7 +121,7 @@ for (var i = 0; i < continuousElements.length; i++) {
     element: continuousElements[i],
     handler: function(direction) {
       if (direction === 'down') {
-        $('.slides').animate({top: '-=100%'}, 400);
+        $('.slides').animate({top: '-=100%'}, 300);
       }
     },
     offset: '50%'
@@ -131,7 +131,7 @@ for (var i = 0; i < continuousElements.length; i++) {
     element: continuousElements[i],
     handler: function(direction) {
       if (direction === 'up') {
-        $('.slides').animate({top: '+=100%'}, 400);
+        $('.slides').animate({top: '+=100%'}, 300);
       }
     },
     offset: '50%'
