@@ -152,11 +152,25 @@ for (var i = 0; i < continuousElements.length; i++) {
   new Waypoint({
     element: continuousElements[i],
     index: i,
-    handler: function(direction) {      
-      $('.indicators').find("li").removeClass('active');
-      $('.indicators').find("li:eq("+ this.options.index +")").addClass('active');      
+    handler: function(direction) { 
+      if (direction === 'down') {
+        $('.indicators').find("li").removeClass('active');
+        $('.indicators').find("li:eq("+ this.options.index +")").addClass('active');  
+      }    
     },
-    offset: '30%'
+    offset: '50%'
+  });
+
+  new Waypoint({
+    element: continuousElements[i],
+    index: i,
+    handler: function(direction) { 
+      if (direction === 'up') {
+        $('.indicators').find("li").removeClass('active');
+        $('.indicators').find("li:eq("+ this.options.index +")").addClass('active');  
+      }    
+    },
+    offset: '10%'
   });
 }
 
