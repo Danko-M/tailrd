@@ -112,17 +112,20 @@ togglesContainer.find(togglesContainerItems).on('click', function() {
 
 var continuousElements = document.getElementsByClassName('continuous-true'),
     backgroundEl = document.getElementById('scroll-animation-bg'),
+    slides = document.getElementById('slides'),
     animationSection = document.getElementById('scroll-animation'),
     animBase = $('#anim-base'),
     howItWorksSection = document.getElementById('how-it-works');
 
+var yOffset = 66.6666;
 for (var i = 0; i < continuousElements.length; i++) {
   
   new Waypoint({
     element: continuousElements[i],
     handler: function(direction) {
       if (direction === 'down') {
-        $('.slides').animate({top: '-=100%'}, 300);
+        yOffset -=33.3333;
+        slides.style.transform = "translateY(" + yOffset + "%)";
       }
     },
     offset: '50%'
@@ -132,7 +135,8 @@ for (var i = 0; i < continuousElements.length; i++) {
     element: continuousElements[i],
     handler: function(direction) {
       if (direction === 'up') {
-        $('.slides').animate({top: '+=100%'}, 300);
+        yOffset +=33.3333;
+        slides.style.transform = "translateY(" + yOffset + "%)";
       }
     },
     offset: '50%'
