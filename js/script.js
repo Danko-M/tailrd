@@ -110,11 +110,13 @@ togglesContainer.find(togglesContainerItems).on('click', function() {
 
 // scroll nimation (home page)
 
-var continuousElements = document.getElementsByClassName('continuous-true'),
+var slidesContainer = document.getElementsByClassName('slides-container'),
+    continuousElements = document.getElementsByClassName('continuous-true'),
     backgroundEl = document.getElementById('scroll-animation-bg'),
     slides = document.getElementById('slides'),
     animationSection = document.getElementById('scroll-animation'),
     howItWorksSection = document.getElementById('how-it-works'),
+    indicators = document.getElementsByClassName('indicators'),
     yOffset = 66.6666;
 
 for (var i = 0; i < continuousElements.length; i++) {
@@ -146,8 +148,8 @@ for (var i = 0; i < continuousElements.length; i++) {
     index: i,
     handler: function(direction) { 
       if (direction === 'down') {
-        $('.indicators').find("li").removeClass('active');
-        $('.indicators').find("li:eq("+ this.options.index +")").addClass('active');  
+        $(indicators).find("li").removeClass('active');
+        $(indicators).find("li:eq("+ this.options.index +")").addClass('active');  
       }    
     },
     offset: '50%'
@@ -158,8 +160,8 @@ for (var i = 0; i < continuousElements.length; i++) {
     index: i,
     handler: function(direction) { 
       if (direction === 'up') {
-        $('.indicators').find("li").removeClass('active');
-        $('.indicators').find("li:eq("+ this.options.index +")").addClass('active');  
+        $(indicators).find("li").removeClass('active');
+        $(indicators).find("li:eq("+ this.options.index +")").addClass('active');  
       }    
     },
     offset: '-10%'
@@ -176,8 +178,8 @@ new Waypoint({
     handler: function(direction) {
       if (direction === 'down') {
         backgroundEl.style.backgroundAttachment = "fixed";
-        $('.slides-container').addClass('fixed');
-        $('.slides-container').removeClass('is-bottom');
+        $(slidesContainer).addClass('fixed');
+        $(slidesContainer).removeClass('is-bottom');
       }
     },
     offset: '7%'
@@ -188,7 +190,7 @@ new Waypoint({
     handler: function(direction) {
       if (direction === 'up') {
         backgroundEl.style.backgroundAttachment = "scroll";
-        $('.slides-container').removeClass('fixed');
+        $(slidesContainer).removeClass('fixed');
       }
     },
     offset: '7%'
@@ -199,8 +201,8 @@ new Waypoint({
     handler: function(direction) {
       if (direction === 'down') {
         backgroundEl.style.backgroundAttachment = "scroll";
-        $('.slides-container').removeClass('fixed');
-        $('.slides-container').addClass('is-bottom');
+        $(slidesContainer).removeClass('fixed');
+        $(slidesContainer).addClass('is-bottom');
       }
     },
     offset: '80%'
@@ -211,8 +213,8 @@ new Waypoint({
     handler: function(direction) {
       if (direction === 'up') {
         backgroundEl.style.backgroundAttachment = "fixed";
-        $('.slides-container').addClass('fixed');
-        $('.slides-container').removeClass('is-bottom');
+        $(slidesContainer).addClass('fixed');
+        $(slidesContainer).removeClass('is-bottom');
       }
     },
     offset: '80%'
