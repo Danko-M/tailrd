@@ -129,7 +129,7 @@
 	background-color: $bg-gray-home;
 	background-image: url(../img/bg-wood.jpg);
 	background-size: contain;	
-	@media only screen and (max-width: 991px) {
+	@media only screen and (max-width: 1024px) {
 		/* overriding js*/
 		background-attachment: scroll !important; 
 	}
@@ -141,10 +141,7 @@
 		}
 		.container {
 			padding-bottom: 0;
-		}
-		.sc-anim-tile-01 {
-			padding-top: 30px;
-		}
+		}		
 	}
 	p {
 		padding-left: 20px;
@@ -263,6 +260,10 @@
 	font-size: 24px;
 	@media only screen and (min-width: 768px) {
 		font-size: 30px;
+		padding-top: 30px;
+	}
+	@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+		padding-top: 100px;
 	}
 }
 .sc-anim-tile-02 {
