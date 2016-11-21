@@ -115,17 +115,16 @@
 	}
 }
 .mob-tab {
-	@media only screen and (min-width: 992px) {
+	@media only screen and (min-width: 1025px) {
 		display: none;
-		background: #f00;
 	}
 }
 .lap-desk {
-	@media only screen and (max-width: 991px) {
+	@media only screen and (max-width: 1024px) {
 		display: none;
-		background: #0f0;
 	}
 }
+
 .scroll-animation {
 	background-color: $bg-gray-home;
 	background-image: url(../img/bg-wood.jpg);
@@ -134,14 +133,17 @@
 		/* overriding js*/
 		background-attachment: scroll !important; 
 	}
-	@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	@media only screen and (min-width: 768px) and (max-width: 1024px) {
 		.row {
 			margin-top: 50px;
 			margin-bottom: 50px;
 		}
 		.container {
-			// padding-top: 0;
 			padding-bottom: 0;
+		}
+		.sc-anim-tile-01 {
+			padding-top: 30px;
 		}
 	}
 	p {
@@ -349,7 +351,9 @@
   	background-position: left top;
 	}
   small {
-  	font-size: 11px;
+  	display: inline-block;
+  	padding-right: 15px;
+  	font-size: 10px;
     font-weight: 400;
   }
   .row {
@@ -358,7 +362,10 @@
 	  	position: absolute;
 	  	top: -10px;
 	  	left: 0px;
-	  	right: 0px;
+	  	right: 15px;	
+	  	@media only screen and (min-width: 769px) {
+	  		right: 0;
+	  	}  	
 	  	bottom: -10px;
 	  	display: block;
 	  	content: "";
@@ -376,7 +383,7 @@
 	@media only screen and (min-width: 768px) {
 		margin-bottom: 0;
 		font-size: 28px;
-		font-weight: 700;		
+		font-weight: 600;		
 	}
 }
 .join-title-02 {
