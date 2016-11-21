@@ -114,10 +114,36 @@
 		}
 	}
 }
+.mob-tab {
+	@media only screen and (min-width: 992px) {
+		display: none;
+		background: #f00;
+	}
+}
+.lap-desk {
+	@media only screen and (max-width: 991px) {
+		display: none;
+		background: #0f0;
+	}
+}
 .scroll-animation {
 	background-color: $bg-gray-home;
 	background-image: url(../img/bg-wood.jpg);
 	background-size: contain;	
+	@media only screen and (max-width: 991px) {
+		/* overriding js*/
+		background-attachment: scroll !important; 
+	}
+	@media only screen and (min-width: 768px) and (max-width: 991px) {
+		.row {
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+		.container {
+			// padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
 	p {
 		padding-left: 20px;
 		border-left: 5px solid $blue2;
