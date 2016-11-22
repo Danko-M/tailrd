@@ -182,7 +182,7 @@ new Waypoint({
         $(slidesContainer).removeClass('is-bottom');
       }
     },
-    offset: '7%'
+    offset: '13%'
   });
 
 new Waypoint({
@@ -193,7 +193,7 @@ new Waypoint({
         $(slidesContainer).removeClass('fixed');
       }
     },
-    offset: '7%'
+    offset: '13%'
   });
 
 new Waypoint({
