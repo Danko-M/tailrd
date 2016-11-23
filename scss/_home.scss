@@ -363,9 +363,9 @@
 	  	position: absolute;
 	  	top: -10px;
 	  	left: 0px;
-	  	right: 15px;	
-	  	@media only screen and (min-width: 769px) {
-	  		right: 0;
+  		right: 0;
+	  	@media only screen and (min-width: 768px) {
+	  		right: 15px;	
 	  	}  	
 	  	@media only screen and (min-width: 992px) {
 		    left: 150px;
@@ -387,11 +387,15 @@
 }
 .join-title-01 {
 	font-size: 20px;
+	padding-top: 20px;
 	margin-bottom: 20px;
 	@media only screen and (min-width: 768px) {
 		margin-bottom: 0;
 		font-size: 28px;
 		font-weight: 600;		
+	}
+	@media only screen and (min-width: 1399px) {
+		padding-top: 0;
 	}
 }
 .join-title-02 {
@@ -416,6 +420,7 @@
     background: $blue2;
 	}
 }
+
 .join-form {
   display: inline-block;
 	max-width: 480px;
@@ -424,7 +429,6 @@
     margin-top: 50px;
 		margin-bottom: 30px;
 		@media only screen and (min-width: 768px) {
-			left: 20px;
     	margin-bottom: 100px;
 		}
     * {
@@ -444,51 +448,3 @@
 		}
 	}
 }
-/* Custom, iPhone Retina */
-
-@media only screen and (min-width: 320px) {}
-
-
-/* Extra Small Devices, Phones */
-
-@media only screen and (min-width: 480px) {}
-
-
-/* Small Devices, Tablets */
-
-@media only screen and (min-width: 768px) {}
-
-
-/* Medium Devices, Desktops */
-
-@media only screen and (min-width: 992px) {}
-
-
-/* Large Devices, Wide Screens */
-
-@media only screen and (min-width: 1200px) {}
-
-
-/* Large Devices, Wide Screens */
-
-@media only screen and (max-width: 1199px) {}
-
-
-/* Medium Devices, Desktops */
-
-@media only screen and (max-width: 991px) {}
-
-
-/* Small Devices, Tablets */
-
-@media only screen and (max-width: 767px) {}
-
-
-/* Extra Small Devices, Phones */
-
-@media only screen and (max-width: 479px) {}
-
-
-/* Custom, iPhone Retina */
-
-@media only screen and (max-width: 319px) {}

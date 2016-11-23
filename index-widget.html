@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i|Open+Sans:300,400,600,700" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/basic_style.css">
+    <link rel="stylesheet" href="css/maitre-widget.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -41,29 +41,8 @@
             <div class="hero-form">
               <div class="hero-txt-03">Sign up to the waitlist for a chance to</div>
               <div class="hero-txt-04">WIN A $500 SHOPPING SPREE</div>
-              <!-- <div>dankomilutinovic@gmail.com</div> -->
               <style>
-                .mfp-content {
-                  max-width: 500px;
-                }
-                #maitre-field-email,
-                #maitre-field-submit {
-                  display: table-cell;
-                }
-                #maitre-field-email {
-                  width: 100%;
-                }
-                #maitre-field-email input {
-                  position: relative;
-                  top: 2px;
-                  line-height: 1.2em;               
-                }
-                #maitre-field-email label {
-                  display: none;
-                }
-                a#maitre-status {
-                  margin-top: 10px;
-                }
+                
               </style>
               <script type="text/javascript">
                 window.Maitre = {
@@ -71,10 +50,6 @@
                   // test_mode: true,
                   callbacks: {
                     afterSuccess: function(data, form) {
-                      if (data.response == "subscriber_created") {
-                        // dataLayer.push({'event': 'signup_waiting'});
-                        console.log(data.response);
-                      }
 
                       if (data.response == "subscriber_created" || data.response == "subscriber_retrieved" || data.response == "subscriber_not_verified") {
                         jQuery("[data-maitre-form]").removeClass("hide");
@@ -272,15 +247,7 @@
             <div class="join-form">
               <div class="text-left"><i class="fa fa-check"></i>  <strong>Shop when ready</strong> - refund never expires!</div>
               <div class="text-left"><i class="fa fa-check"></i>  <strong>Buy for anyone</strong> - Tailrd makes gift shopping easy!</div>
-              <style>
-                @media only screen and (min-width: 768px) {
-                  .join-form .input-group {
-                      left: 0; 
-                    }
-                  }
-              </style>
               <div class="input-group">
-                <!-- <input type="email" class="form-control" placeholder="Email"> -->
                 <span class="input-group-btn">
                   <a href="#hero" class="btn btn-sign-me-up" type="submit">Sign me up</a href="#">
                 </span>
