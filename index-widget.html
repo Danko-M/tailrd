@@ -41,10 +41,29 @@
             <div class="hero-form">
               <div class="hero-txt-03">Sign up to the waitlist for a chance to</div>
               <div class="hero-txt-04">WIN A $500 SHOPPING SPREE</div>
-              <div>xyc@abcd.com</div>
+              <div>dankomilutinovic@gmail.com</div>
               <style>
                 .mfp-content {
                   max-width: 500px;
+                }
+                #maitre-field-email,
+                #maitre-field-submit {
+                  display: table-cell;
+                }
+                #maitre-field-email {
+                  width: 100%;
+                }
+                #maitre-field-email input {
+                  position: relative;
+                  top: 2px;
+                  line-height: 1.2em;               
+                }
+                #maitre-field-email label {
+                  display: none;
+                }
+                a#maitre-status {
+                  /*display: block;*/
+                  margin-top: 10px;
                 }
               </style>
               <script type="text/javascript">
@@ -54,7 +73,7 @@
                     afterSuccess: function(data, form) {
                       if (data.response == "subscriber_created") {
                         // dataLayer.push({'event': 'signup_waiting'});
-                        console.log(data);
+                        console.log(data.response);
                       }
 
                       if (data.response == "subscriber_created" || data.response == "subscriber_retrieved" || data.response == "subscriber_not_verified") {
@@ -258,7 +277,7 @@
               <div class="input-group">
                 <!-- <input type="email" class="form-control" placeholder="Email"> -->
                 <span class="input-group-btn">
-                  <a href="#hero" class="btn btn-sign-me-up" type="submit">Sign up</a href="#">
+                  <a href="#hero" class="btn btn-sign-me-up" type="submit">Sign me up</a href="#">
                 </span>
               </div><!-- /input-group -->
             </div><!-- /.join-form .text-left  --> 
