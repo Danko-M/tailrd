@@ -28,7 +28,7 @@
 
 
 
-    <div class="container-fluid hero" id="hero">
+    <div class="container-fluid hero">
       <div class="container text-center">
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">            
@@ -39,68 +39,11 @@
               <div class="hero-txt-03">Sign up to the waitlist for a chance to</div>
               <div class="hero-txt-04">WIN A $500 SHOPPING SPREE</div>
               <div class="input-group">
-                <input type="email" class="form-control" placeholder="Email - old one">
+                <input type="email" class="form-control" placeholder="Email">
                 <span class="input-group-btn">
                   <button class="btn btn-sign-me-up" type="submit">Sign me up</button>
                 </span>
               </div><!-- /input-group -->
-              <style>
-                #maitre-field-email {
-                  width: calc(100% - 100px);
-                  /*position: relative;
-                  display: table;
-                  border-collapse: separate;*/
-                }
-                #maitre-field-email,
-                #maitre-field-submit {
-                  /*display: table-cell;*/
-                  float: left;
-                }
-
-                #maitre-field-submit {
-
-                }
-                #maitre-submit-button {
-                  padding: 6px 12px;
-                  font-family: "Open Sans", sans-serif;
-                  font-weight: 400;
-                  font-size: 14px;
-                  color: #fff;
-                  background-color: #34bbbe;
-                  border: 1px solid transparent;
-                }
-                #maitre-field-email input {
-                  float: left;
-                  width: 100%;
-                  height: 34px;
-                  padding: 6px 12px;
-                  font-size: 14px;
-                  line-height: 1.42857143;
-                  color: #555;
-                  background-color: #fff;
-                  background-image: none;
-                  border: 1px solid #ccc;
-                  border-radius: 0;
-                  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-                  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-                }
-                #maitre-field-email input:focus {
-                  border-color: #66afe9;
-                  outline: 0;
-                  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
-                }
-              </style>
-              <script type="text/javascript">
-                window.Maitre = { 
-                  uuid: "MFf9c64f41df",
-                  require_name: false,
-                  labels: {
-                    submit_button: "Sign me up"
-                  } 
-                };
-              </script>
-              <script data-maitre src='https://maitreapp.co/widget.js' async></script> 
-
               <div class="hero-txt-05">See contest details <a href="#join-the-waitlist" class="txt-blue">below</a href="#">.</div>
             </div><!-- /.hero-form  -->            
           </div><!-- /.col-sm-8 .col-sm-offset-2  -->
@@ -126,45 +69,50 @@
 
 
     <div class="container-fluid scroll-animation" id="scroll-animation-bg">
-    <!-- mobile -->
-      <div class="container visible-xs-block">
-        <div class="row">
+    <!-- mobile and tablet-->
+      <div class="container mob-tab">
 
-          <div class="col-xs-12"><img class="img-responsive" src="img/shirt-01.png" alt="..."></div>
-          <div class="col-xs-12">
+        <div class="row">
+          <div class="col-xs-12 col-sm-5 col-sm-push-7"><img class="img-responsive" src="img/shirt-01.png" alt="..."></div>
+          <div class="col-xs-12 col-sm-7 col-sm-pull-5">
             <div class="sc-anim-tile-01">Find clothes easily</div>
             <div class="sc-anim-tile-02">A search that looks for items specifically for you</div>
-            <p>Based on your profile, Tailrd finds items that fit your size and style and then shows you where to buy them online and off. No more wasted time looking for the perfect item!</p>
+            <p class="font-16px">Based on your profile, Tailrd finds items that fit your size and style and then shows you where to buy them online and off. No more wasted time looking for the perfect item!</p>
           </div>
+        </div><!-- /.row -->
 
-          <div class="col-xs-12"><img class="img-responsive" src="img/shirt-02.png" alt="..."></div>
-          <div class="col-xs-12">
+        <div class="row">
+          <div class="col-xs-12 col-sm-5"><img class="img-responsive" src="img/shirt-02.png" alt="..."></div>
+          <div class="col-xs-12 col-sm-7">
             <div class="sc-anim-tile-01">Shop doubt-free</div>
             <div class="sc-anim-tile-02">Receive personalized fit information on products</div>
-            <p>Tailrd will provide you with personalized fit information so that you have no doubt about what you're buying! We'll even give you tips on how to best wear the item based on your style and body type.</p>
+            <p class="font-16px">Tailrd will provide you with personalized fit information so that you have no doubt about what you're buying! We'll even give you tips on how to best wear the item based on your style and body type.</p>
           </div>
-          
+        </div><!-- /.row -->
 
-          <div class="col-xs-12"><img class="img-responsive" src="img/shirt-03.png" alt="..."></div>
-          <div class="col-xs-12">
+        <div class="row">
+          <div class="col-xs-12 col-sm-5 col-sm-push-7"><img class="img-responsive" src="img/shirt-03.png" alt="..."></div>
+          <div class="col-xs-12 col-sm-7 col-sm-pull-5">
             <div class="sc-anim-tile-01">Get advice</div>
             <div class="sc-anim-tile-02">Reach out to friends and stylists for fashion help</div>
-            <p>If you're unsure about the item you've found, easily reach out to your social network to get their thoughts on products. Also, connect with stylists on Tailrd for FREE to receive outfit suggestions and tips on which looks work.</p>
+            <p class="font-16px">If you're unsure about the item you've found, easily reach out to your social network to get their thoughts on products. Also, connect with stylists on Tailrd for FREE to receive outfit suggestions and tips on which looks work.</p>
           </div>
+        </div><!-- /.row -->
 
-          <div class="col-xs-12"><img class="img-responsive" src="img/shirt-04.png" alt="..."></div>
-          <div class="col-xs-12">
+        <div class="row">
+          <div class="col-xs-12 col-sm-5"><img class="img-responsive" src="img/shirt-04.png" alt="..."></div>
+          <div class="col-xs-12 col-sm-7">
             <div class="sc-anim-tile-01">Give the perfect gift</div>
             <div class="sc-anim-tile-02">Get suggestions on what to buy for people in your network</div>
-            <p>Gift-giving is easy with Tailrd. Tailrd will show you products that fit that special someone's size and style. Or really delight them by grabbing something from their wishlist.</p>
+            <p class="font-16px">Gift-giving is easy with Tailrd. Tailrd will show you products that fit that special someone's size and style. Or really delight them by grabbing something from their wishlist.</p>
           </div>
-
         </div><!-- /.row -->
+
       </div><!-- /.container -->
 
 
-    <!-- non mobile -->
-      <div id="scroll-animation" class="container hidden-xs">
+    <!-- laptop and desktop -->
+      <div id="scroll-animation" class="container lap-desk">
         <div class="row continuous-true">          
           <div class="col-sm-6 slides-container" id="slides-container">
             <img class="img-responsive anim-base" id="anim-base" src="img/shirt-01.png" alt="...">
@@ -241,7 +189,7 @@
     <div id="join-the-waitlist" class="container-fluid join-the-waitlist">
       <div class="container text-center">
         <div class="row">
-          <div class="col-sm-8 col-sm-offset-2 font-16px">
+          <div class="col-md-8 col-md-offset-2 font-16px">
             <div class="join-title-01">Join the waitlist now for a chance to win a</div>
             <div class="join-title-02">$500 SHOPPING SPREE</div>
             <p class="font-16px">Top one hundred (100) people on the waitlist each receive a $500 shopping spree!</br> 
@@ -249,17 +197,10 @@
             <div class="join-form">
               <div class="text-left"><i class="fa fa-check"></i>  <strong>Shop when you're ready</strong> - credit never expires!</div>
               <div class="text-left"><i class="fa fa-check"></i>  <strong>Buy for anyone</strong> - Tailrd makes gift shopping easy!</div>
-              <style>
-                @media only screen and (min-width: 768px) {
-                  .join-form .input-group {
-                      left: 0; 
-                    }
-                  }
-              </style>
               <div class="input-group">
-                <!-- <input type="email" class="form-control" placeholder="Email"> -->
+                <input type="email" class="form-control" placeholder="Email">
                 <span class="input-group-btn">
-                  <a href="#hero" class="btn btn-sign-me-up" type="submit">Sign up</a href="#">
+                  <button class="btn btn-sign-me-up" type="submit">Sign me up</button>
                 </span>
               </div><!-- /input-group -->
             </div><!-- /.join-form .text-left  --> 
@@ -333,7 +274,7 @@
       </div><!-- /.container -->
     </div><!-- /.container-fluid -->
 
-
+    
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

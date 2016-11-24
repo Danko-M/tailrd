@@ -10,8 +10,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i|Open+Sans:300,400,600,700" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/maitre-widget.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
   </head>
   <body>
 
@@ -28,7 +31,7 @@
 
 
 
-    <div class="container-fluid hero">
+    <div class="container-fluid hero" id="hero">
       <div class="container text-center">
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">            
@@ -38,18 +41,65 @@
             <div class="hero-form">
               <div class="hero-txt-03">Sign up to the waitlist for a chance to</div>
               <div class="hero-txt-04">WIN A $500 SHOPPING SPREE</div>
-              <div class="input-group">
-                <input type="email" class="form-control" placeholder="Email">
-                <span class="input-group-btn">
-                  <button class="btn btn-sign-me-up" type="submit">Sign me up</button>
-                </span>
-              </div><!-- /input-group -->
+              <style>
+                
+              </style>
+              <script type="text/javascript">
+                window.Maitre = {
+                  uuid: "MFf9c64f41df",
+                  // test_mode: true,
+                  callbacks: {
+                    afterSuccess: function(data, form) {
+
+                      if (data.response == "subscriber_created" || data.response == "subscriber_retrieved" || data.response == "subscriber_not_verified") {
+                        jQuery("[data-maitre-form]").removeClass("hide");
+                        jQuery("#maitre-content").removeClass("show");
+                        jQuery("#demo_content").html(jQuery("#maitre-content").html());
+
+                        $.magnificPopup.open({
+                          items: {
+                            src: "#results",
+                          },
+                          callbacks: {
+                            beforeOpen: function() {
+                              this.st.mainClass = "mfp-zoom-in";
+                            }
+                          },
+                          removalDelay: 200,
+                          type: "inline"
+                        });
+
+                        jQuery("[data-maitre-submit-button]").prop("disabled", false).html(Maitre.labels.submit_button);
+                      }
+                    }
+                  }
+                };
+              </script>
+              <script data-maitre src='https://maitreapp.co/widget.js' async></script> 
+
               <div class="hero-txt-05">See contest details <a href="#join-the-waitlist" class="txt-blue">below</a href="#">.</div>
             </div><!-- /.hero-form  -->            
           </div><!-- /.col-sm-8 .col-sm-offset-2  -->
         </div><!-- /.row -->
       </div><!-- /.container .text-center  -->
     </div><!-- /.container-fluid .hero -->
+
+
+    <!-- lightbox window -->
+    <div id="results" class="popup mfp-with-anim mfp-hide medium">
+      <div class="row">
+        <div class="text-center center-block" id="maitre-widget-container">
+          
+          <div id="demo_content"></div>
+
+          <hr class="medium"/>
+
+          <a class="btn blue large uppercase" id="modal_cta" href="/signup">Wanna buy now? Jump the queue for $69</a>
+
+        </div>
+      </div>
+    </div>
+
 
 
 
@@ -190,17 +240,16 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-md-8 col-md-offset-2 font-16px">
-            <div class="join-title-01">Join the waitlist now for a chance to win a</div>
+            <div class="join-title-01">Join the waitlist for a chance to win a</div>
             <div class="join-title-02">$500 SHOPPING SPREE</div>
             <p class="font-16px">Top one hundred (100) people on the waitlist each receive a $500 shopping spree!</br> 
               Move up the waitlist by referring friends, retweeting, or reposting.</p>  
             <div class="join-form">
-              <div class="text-left"><i class="fa fa-check"></i>  <strong>Shop when you're ready</strong> - credit never expires!</div>
+              <div class="text-left"><i class="fa fa-check"></i>  <strong>Shop when ready</strong> - refund never expires!</div>
               <div class="text-left"><i class="fa fa-check"></i>  <strong>Buy for anyone</strong> - Tailrd makes gift shopping easy!</div>
               <div class="input-group">
-                <input type="email" class="form-control" placeholder="Email">
                 <span class="input-group-btn">
-                  <button class="btn btn-sign-me-up" type="submit">Sign me up</button>
+                  <a href="#hero" class="btn btn-sign-me-up" type="submit">Sign me up</a href="#">
                 </span>
               </div><!-- /input-group -->
             </div><!-- /.join-form .text-left  --> 
@@ -274,11 +323,11 @@
       </div><!-- /.container -->
     </div><!-- /.container-fluid -->
 
-    
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-placeholder/2.3.1/jquery.placeholder.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <script src="js/script.js"></script>
