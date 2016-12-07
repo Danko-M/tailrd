@@ -439,12 +439,20 @@
 		margin-right: 10px;
 	}
 }
-.as-seen-in {
+.partners {
 	text-align: center;
-	@media only screen and (min-width: 1200px) {
+	img {
+		display: inline-block;
+		max-width: 120px;
+		margin-bottom: 30px;
+	}
+	@media only screen and (min-width: 992px) {
 		li {
 			width: 20%;
 			margin-right: -5px;
+		}
+		img {
+			max-width: 160px;
 		}
 	}
 }
